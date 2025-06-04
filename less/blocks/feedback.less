@@ -1,0 +1,121 @@
+
+
+.wrap__feedback {
+    background: rgb(242, 245, 249);
+    margin: 80px;
+    padding-top: 80px;
+}
+
+.header__feedback {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__close {
+    border: none;
+    background: none;
+}
+
+.main__feedback {
+    margin-top: 165px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    &-title {
+        color: rgb(1, 1, 1);
+        font-family: Roboto;
+        font-size: 52px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &-subtitle {
+        color: rgb(1, 1, 1);
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 150%;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.feedback__form-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & input {
+        width: 513px;
+        padding: 16px 20px;
+        box-sizing: border-box;
+        border: 1px solid rgb(206, 218, 231);
+        border-radius: 15px;
+        background: rgb(255, 255, 255);
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.feedback__form-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    & textarea {
+        width: 1440px;
+        padding: 16px 20px;
+        box-sizing: border-box;
+        resize: none;
+        height: 60px;
+        border: 1px solid rgb(206, 218, 231);
+        border-radius: 15px;
+        background: rgb(255, 255, 255);
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.feedback__form-text {
+    color: rgb(160, 160, 160);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.form__bottom-btn {
+    padding: 10px 20px;
+    border: 1px solid rgb(11, 69, 137);
+    border-radius: 15px;
+    color: rgb(11, 69, 137);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 135%;
+    height: 60px;
+}
+
+
+@media (max-width: 1441px) {
+    .wrap__feedback {
+        margin: 60px;
+        padding-top: 60px;
+    }
+}

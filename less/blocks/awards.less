@@ -1,0 +1,90 @@
+.awards {
+  margin: 0 0 33px;
+}
+.awards__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 37px 0;
+  margin: 0;
+}
+.awards__item {
+  padding: 2px 25px;
+  position: relative;
+  text-align: center;
+  width: 49%;
+  &::before, &::after {
+    background-image: url('../../img/laurel.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 28px;
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+    transform: scaleX(-1);
+  }
+}
+.awards__name {
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+.awards__text {
+  font-size: 12px;
+  font-weight: var(--f-lighter);
+  margin: 0;
+}
+@media (min-width: @tablet-breakpoint) {
+  .awards__list {
+    gap: 40px 5%;
+  }
+  .awards__item {
+    width: 17%;
+  }
+  .awards__name {
+    font-size: 20px;
+  }
+  .awards__text {
+    font-size: 14px;
+  }
+}
+@media (min-width: @desktop-breakpoint) {
+  .awards__name {
+    font-size: 20px;
+  }
+  .awards__text {
+    font-size: 14px;
+  }
+  .awards__item {
+    padding: 12px 25px;
+    &::before, &::after {
+      width: 70px;
+    }
+    &::before {
+      left: -10px;
+    }
+    &::after {
+      right: -10px;
+    }
+  }
+}
+@media (min-width: @wide-breakpoint) {
+  .awards__list {
+    gap: 67px 5%;
+  }
+  .awards__name {
+    font-size: 24px;
+  }
+  .awards__text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}

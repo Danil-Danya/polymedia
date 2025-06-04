@@ -1,0 +1,215 @@
+.catalog-banner {
+  margin: 40px 0 0;
+}
+.catalog-banner__left, .catalog-banner__right {
+  width: 100%;
+}
+.catalog-banner__slider {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  &--desk {
+    display: none;
+  }
+}
+.catalog-banner__slider-nav {
+  display: none;
+}
+.catalog-banner__img {
+  width: 100%;
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+.catalog-banner__price {
+  background-color: var(--color-highlight);
+  color: var(--white);
+  font-weight: var(--f-lighter);
+  margin: 0;
+  padding: 41px 0 44px;
+  a {
+    color: inherit;
+  }
+  h2 {
+    margin: 0 0 5px;
+  }
+  &--detail {
+    margin-bottom: 80px;
+    padding: 80px 0 78px;
+    .h2 {
+      margin-bottom: 7px;
+    }
+    .btn {
+      margin-top: 40px;
+    }
+  }
+}
+.catalog-banner__doc {
+  font-size: 12px;
+  margin: 0;
+}
+.catalog-banner__text {
+  margin: 41px 0 21px;
+}
+@media (min-width: @tablet-breakpoint) {
+  .catalog-banner {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 0 auto 29px;
+    width: calc(100% - 79px);
+  }
+  .catalog-banner__left {
+    overflow: hidden;
+    width: 74.5%;
+  }
+  .catalog-banner__right {
+    width: 23.9%;
+  }
+  .catalog-banner__slider-nav {
+    --size: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    z-index: 10;
+    .swiper-pagination-bullet {
+      background-color: #D9D9D9;
+      border-radius: 50%;
+      display: block;
+      height: var(--size);
+      margin: 0 0 4px;
+      opacity: 1;
+      width: var(--size);
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background-color: var(--color-highlight);
+    }
+    &.swiper-pagination-bullets.swiper-pagination-horizontal {
+      left: auto;
+      width: fit-content;
+      .swiper-pagination-bullet {
+        margin: 0 0 4px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .catalog-banner__slider {
+    aspect-ratio: 1193/430;
+    width: 100%;
+    &--desk {
+      display: block;
+    }
+    &--mob {
+      display: none;
+    }
+    .swiper-wrapper {
+      height: 100%;
+    }
+  }
+  .catalog-banner__img {
+    height: 100%;
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .catalog-banner__price {
+    padding: 14px 0 16px;
+    &--detail {
+      margin-bottom: 0;
+    }
+    .h2 {
+      font-size: 22px;
+      margin-bottom: 7px;
+    }
+    .container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      height: 100%;
+      width: calc(100% - 35px);
+    }
+    .btn {
+      border-radius: 12px;
+      padding: 9px 7px 9px 9px;
+    }
+  }
+  .catalog-banner__doc {
+    flex-grow: 1;
+    font-size: 14px;
+  }
+  .catalog-banner__text {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 20px 0 15px;
+  }
+}
+@media (min-width: @desktop-breakpoint) {
+  .catalog-banner {
+    max-width: 1200px;
+    margin-bottom: 61px;
+    width: calc(100vw - 79px);
+  }
+  .catalog-banner__slider-nav {
+    --size: 8px; 
+  }
+  .catalog-banner__price {
+    padding: 19px 0;
+    .container {
+      width: calc(100% - 44px);
+    }
+    .btn {
+      padding: 9px 8px 9px 6px;
+      .arrow {
+        margin-left: 21px;
+      }
+    }
+    .h2 {
+      margin-bottom: 9px;
+    }
+  }
+  .catalog-banner__doc {
+    font-size: 16px;
+  }
+}
+@media (min-width: @wide-breakpoint) {
+  .catalog-banner {
+    max-width: 1600px;
+    width: calc(100vw - 100px);
+    &--detail {
+      margin: 162px auto 63px;
+    }
+  }
+  .catalog-banner__price {
+    padding: 30px 0 26px;
+    .h2 {
+      font-size: 32px;
+    }
+    .container {
+      width: calc(100% - 62px);
+    }
+  }
+  .catalog-banner__right {
+    width: 23.7%;
+  }
+  .catalog-banner__doc {
+    font-size: 16px;
+  }
+  .catalog-banner__text {
+    font-size: 16px;
+    margin-bottom: 21px;
+  }
+}

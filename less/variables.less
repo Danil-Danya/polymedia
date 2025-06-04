@@ -1,0 +1,43 @@
+@tablet-breakpoint: 768px;
+@desktop-breakpoint: 1024px;
+@wide-breakpoint: 1441px;
+@zindex-bg: -1;
+@zindex-overlay: 0;
+@zindex-modal: 100;
+@zindex-popup: 150;
+
+:root {
+  --color-bg-main: #fff;
+  --color-text: #010101;
+  --color-link: #0B4589;
+  --color-highlight: #0B4589;
+  --color-gray: #A0A0A0;
+  --color-light: #F2F5F9;
+  --color-light-secondary: #CEDAE7;
+  --white: #fff;
+  --black: #010101;
+  --red: #E4003A;
+  --border-radius: 10px;
+  --fsize-main: 16px;
+  --fsize-number: 40px;
+  --f-thin: 200;
+  --f-lighter: 300;
+  --f-normal: 400;
+  --f-bold: 500;
+}
+@media (min-width: @tablet-breakpoint) {
+  :root {
+    --fsize-number: 60px;
+  }
+}
+@media (min-width: @desktop-breakpoint) {
+  :root {
+    --fsize-number: 80px;
+  }
+}
+@media (min-width: @wide-breakpoint) {
+  :root {
+    --fsize-main: 18px;
+    --fsize-number: 100px;
+  }
+}

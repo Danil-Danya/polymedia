@@ -1,0 +1,138 @@
+.field-items {
+  margin: 0;
+  li {
+    margin: 0 0 8px;
+    padding: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.field-items__item {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 120px;
+  position: relative;
+  &:hover {
+    .field-items__img {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    .arrow {
+      background-color: var(--color-highlight);
+      svg {
+        stroke: var(--white);
+      }
+    }
+  }
+  .arrow {
+    --border-radius: 6px;
+    --size: 24px;
+    position: absolute;
+    right: 11px;
+    top: 10px;
+  }
+}
+.field-items__img {
+  display: block;
+  flex-shrink: 0;
+  overflow: hidden;
+  width: 100px;
+  img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 0.2s;
+    width: 100%;
+  }
+}
+.field-items__right {
+  background-color: var(--color-light);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 30px 35px 10px 10px;
+  width: calc(100% - 100px);
+}
+.field-items__name {
+  color: var(--color-highlight);
+  font-size: 22px;
+  line-height: 1.2;
+  transform: translateY(-5px);
+}
+.field-items__text {
+  color: var(--color-text);
+  display: block;
+  font-size: 12px;
+  line-height: normal;
+  margin: 0;
+  padding-right: 5px;
+}
+@media (min-width: @tablet-breakpoint) {
+  .field-items {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    li {
+      margin: 0;
+    }
+  }
+  .field-items__item {
+    height: 100%;
+    .arrow {
+      --border-radius: 8px;
+      --size: 32px;
+      right: 10px;
+      top: 10px;
+    }
+  }
+  .field-items__right {
+    padding: 30px 35px 10px 15px;
+  }
+  .field-items__name {
+    color: var(--color-text);
+    font-size: 20px;
+    margin: 0 0 5px;
+  }
+  .field-items__text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@media (min-width: @desktop-breakpoint) {
+  .field-items {
+    gap: 24px 21px;
+  }
+  .field-items__img {
+    width: 48%;
+  }
+  .field-items__right {
+    padding: 50px 45px 29px 29px;
+    width: 52%;
+  }
+}
+@media (min-width: @wide-breakpoint) {
+  .field-items {
+    gap: 32px 29px;
+  }
+  .field-items__item {
+    .arrow {
+      --border-radius: 10px;
+      --size: 40px;
+      right: 15px;
+      top: 16px;
+    }
+  }
+  .field-items__right {
+    padding: 50px 35px 29px 29px;
+  }
+  .field-items__name {
+    font-size: 24px;
+  }
+  .field-items__text {
+    font-size: 18px;
+  }
+}

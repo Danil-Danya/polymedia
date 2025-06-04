@@ -1,0 +1,20 @@
+.dilers {
+  display: flex;
+  justify-content: space-between;
+}
+.dilers__img {
+  width: 377px !important;
+}
+.dilers__list {
+  max-width: 1192px;
+}
+.dilers__main-img {
+  padding-bottom: 160px;
+  width: 1600px;
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  .cabinet__sidebar {
+    display: none;
+  }
+}

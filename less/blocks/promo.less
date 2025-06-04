@@ -1,0 +1,99 @@
+.promo {
+  color: var(--white);
+  p {
+    font-weight: var(--f-lighter);
+  }
+  .h2 {
+    font-weight: var(--f-normal);
+  }
+  h2 {
+    margin-bottom: 22px;
+  }
+  &--tech {
+    .promo__wrap {
+      background-image: url('../img/tech-bg-m-min.jpg');
+    }
+  }
+  &--job {
+    .promo__wrap {
+      background-image: url('../img/job-m.jpg');
+    }
+  }
+}
+.promo__wrap {
+  background-image: url('../img/work-mob.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  max-width: 1760px;
+  padding: 81px 0 79px;
+  width: 100%;
+}
+.promo__text {
+  line-height: 1.3;
+  margin: 0 0 39px;
+}
+@media (min-width: @tablet-breakpoint) {
+  .promo {
+    h2 {
+      margin-bottom: 46px;
+    }
+    &--tech {
+      .promo__wrap {
+        background-image: url('../img/tech-bg-min.jpg');
+      }
+    }
+    &--job {
+      .promo__wrap {
+        background-image: url('../img/job-d.jpg');
+      }
+    }
+  }
+  .promo__wrap {
+    background-image: url('../img/work-desc.jpg');
+    padding: 97px 0;
+  }
+  .promo__text {
+    margin: -22px 0 52px;
+  }
+}
+@media (min-width: @desktop-breakpoint) {
+  .promo {
+    margin: 119px 0 118px;
+    &--tech {
+      .promo__text {
+        width: 40%;
+      }
+    }
+    h2 {
+      margin-bottom: 46px;
+    }
+  }
+  .promo__wrap {
+    max-width: 1320px;
+    overflow: hidden;
+    padding: 58px 0 60px;
+    width: 97%;
+  }
+  .promo__text {
+    font-size: 18px;
+    margin: -17px 0 46px;
+  }
+}
+@media (min-width: @wide-breakpoint) {
+  .promo {
+    margin: 160px 0;
+    h2 {
+      margin-bottom: 54px;
+    }
+  }
+  .promo__wrap {
+    max-width: 1760px;
+    min-width: 0;
+    width: 97%;
+    padding: 77px 0 80px;
+  }
+  .promo__text {
+    margin: -14px 0 62px;
+  }
+}

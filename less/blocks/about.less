@@ -1,0 +1,293 @@
+.about {
+  h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .brands {
+    margin: 80px 0;
+  }
+  .brands__list {
+    li {
+      &:nth-child(n+9) {
+        display: none;
+      }
+    }
+  }
+}
+.about__top {
+  font-weight: var(--f-lighter);
+  line-height: 1.3;
+  margin-bottom: 39px;
+}
+.about__top-right {
+  p {
+    margin: 0 0 22px;
+  }
+  a {
+    color: var(--color-text);
+    text-decoration: underline;
+  }
+}
+.about__top-features {
+  margin: 31px 0 0;
+  li {
+    margin: 0 0 15px;
+  }
+}
+.about__pres.dark-bg {
+  padding: 41px 0;
+}
+.about__pres-img {
+  width: 100%;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.about__pres-info {
+  margin: 20px 0 0;
+  .btn {
+    font-size: 15px;
+    margin: 0 auto;
+    width: fit-content;
+    span {
+      margin: 0;
+    }
+    .arrow {
+      margin-left: 10px;
+    }
+  }
+}
+.about__pres-person {
+  text-align: center;
+}
+.about__pres-name {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+.about__pres-job {
+  font-size: 12px;
+  font-weight: var(--f-lighter);
+  margin: 0;
+}
+.about__pres-text {
+  font-weight: var(--f-lighter);
+  line-height: 1.3;
+  margin: 11px 0 0;
+  p {
+    margin: 0;
+  }
+}
+.about__fields {
+  margin: 80px 0;
+}
+.about__info {
+  margin: 78px 0;
+}
+.about__info-img {
+  margin: 0 0 20px;
+  width: 100%;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.about__info-title {
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+.about__info-text {
+  font-weight: var(--f-lighter);
+  line-height: 1.3;
+  p {
+    margin: 0 0 22px;
+  }
+}
+@media (min-width: @tablet-breakpoint) {
+  .about {
+    h1 {
+      font-size: 40px;
+    }
+    .brands {
+      margin: 97px 0 101px;
+    }
+    .brands__list {
+      li {
+        &:nth-child(n+9) {
+          display: block;
+        }
+      }
+    }
+  }
+  .about__top-features {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+    white-space: nowrap;
+    li {
+      margin: 0 10px 0 0;
+    }
+  }
+  .about__pres.dark-bg {
+    padding: 60px 0;
+  }
+  .about__pres {
+    .container {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+  }
+  .about__pres-img {
+    flex-shrink: 0;
+    width: 23.5%;
+  }
+  .about__pres-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0;
+    width: 74.5%;
+    .btn {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .about__pres-person {
+    margin-top: 40px;
+    order: 1;
+    text-align: left;
+  }
+  .about__pres-text {
+    margin: 0;
+  }
+  .about__pres-name {
+    font-size: 20px;
+    margin-bottom: 11px;
+  }
+  .about__pres-job {
+    font-size: 14px;
+    margin: 0 0 11px;
+  }
+  .about__fields {
+    margin: 100px 0;
+  }
+  .about__info {
+    margin: 100px 0;
+    .container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  .about__info-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    order: -1;
+    width: 100%;
+  }
+  .about__info-img {
+    margin: 0;
+    width: 49%;
+  }
+  .about__info-text {
+    line-height: 1.5;
+    width: 49%;
+  }
+}
+@media (min-width: @desktop-breakpoint) {
+  .about {
+    h1 {
+      font-size: 50px;
+    }
+    .brands {
+      margin: 117px 0 119px;
+    }
+  }
+  .about__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 79px;
+    margin-top: 63px;
+  }
+  .about__top-right {
+    font-size: 20px;
+    line-height: 1.4;
+    order: 1;
+    width: 49%;
+    p {
+      margin-bottom: 28px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .about__top-left {
+    font-size: 20px;
+  }
+  .about__pres.dark-bg {
+    padding: 79px 0;
+  }
+  .about__pres-text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .about__pres-name {
+    font-size: 20px;
+  }
+  .about__pres-job {
+    font-size: 14px;
+  }
+  .about__fields {
+    margin: 120px 0;
+  }
+  .about__info {
+    margin: 120px 0;
+  }
+  .about__info-title {
+    font-size: 32px;
+  }
+  .about__info-text {
+    font-size: 18px;
+    p {
+      margin-bottom: 27px;
+    }
+  }
+}
+@media (min-width: @wide-breakpoint) {
+  .about {
+    h1 {
+      font-size: 100px;
+    }
+    .brands {
+      margin: 157px 0 160px;
+    }
+  }
+  .about__top-features {
+    li {
+      margin-right: 40px;
+    }
+  }
+  .about__pres-name {
+    font-size: 24px;
+  }
+  .about__pres-job {
+    font-size: 16px;
+  }
+  .about__fields {
+    margin: 157px 0;
+  }
+  .about__info {
+    margin: 158px 0 147px;
+  }
+  .about__info-title {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+}

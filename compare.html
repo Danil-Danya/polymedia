@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Polymedia Main</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/lazysizes.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <a href="/" aria-label="На главную" class="header__logo">
+              <svg width="115" height="50" viewBox="0 0 115 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 23.5679H11.141V12.4097H0V23.5679Z" fill="#E4003A"/>
+                <path d="M0 36.7845H11.141V25.6262H0V36.7845Z" fill="#E4003A"/>
+                <path d="M0 49.9998H11.141V38.8416H0V49.9998Z" fill="#E4003A"/>
+                <path d="M12.874 23.5679H24.015V12.4097H12.874V23.5679Z" fill="#008251"/>
+                <path d="M12.874 36.7845H24.015V25.6262H12.874V36.7845Z" fill="#008251"/>
+                <path d="M12.874 50.0001H24.015V38.8418H12.874V50.0001Z" fill="#008251"/>
+                <path d="M25.75 23.5679H36.891V12.4097H25.75V23.5679Z" fill="#154194"/>
+                <path d="M25.75 36.7845H36.891V25.6262H25.75V36.7845Z" fill="#154194"/>
+                <path d="M25.75 50.0001H36.891V38.8418H25.75V50.0001Z" fill="#154194"/>
+                <path d="M38.623 23.5679H49.764V12.4097H38.623V23.5679Z" fill="#E4003A"/>
+                <path d="M38.623 36.7845H49.764V25.6262H38.623V36.7845Z" fill="#E4003A"/>
+                <path d="M38.623 49.9998H49.764V38.8416H38.623V49.9998Z" fill="#E4003A"/>
+                <path d="M51.502 23.5679H62.641V12.4097H51.502V23.5679Z" fill="#008251"/>
+                <path d="M51.502 36.7845H62.641V25.6262H51.502V36.7845Z" fill="#008251"/>
+                <path d="M51.502 50.0001H62.641V38.8418H51.502V50.0001Z" fill="#008251"/>
+                <path d="M64.373 23.5679H75.514V12.4097H64.373V23.5679Z" fill="#154194"/>
+                <path d="M64.373 36.7845H75.514V25.6262H64.373V36.7845Z" fill="#154194"/>
+                <path d="M64.373 50.0001H75.514V38.8418H64.373V50.0001Z" fill="#154194"/>
+                <path d="M77.248 23.5679H88.389V12.4097H77.248V23.5679Z" fill="#E4003A"/>
+                <path d="M77.248 36.7845H88.389V25.6262H77.248V36.7845Z" fill="#E4003A"/>
+                <path d="M77.248 50.0001H88.389V38.8418H77.248V50.0001Z" fill="#E4003A"/>
+                <path d="M90.1191 23.5679H101.26V12.4097H90.1191V23.5679Z" fill="#008251"/>
+                <path d="M90.1191 36.7845H101.26V25.6262H90.1191V36.7845Z" fill="#008251"/>
+                <path d="M90.1191 50.0001H101.26V38.8418H90.1191V50.0001Z" fill="#008251"/>
+                <path d="M102.995 23.5679H114.136V12.4097H102.995V23.5679Z" fill="#154194"/>
+                <path d="M102.995 36.7845H114.136V25.6262H102.995V36.7845Z" fill="#154194"/>
+                <path d="M102.995 50.0001H114.136V38.8418H102.995V50.0001Z" fill="#154194"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.86004 6.14077V9.66432H0V0.168688H4.73359C5.57226 0.102511 6.40303 0.375028 7.05022 0.928612C7.58994 1.5039 7.86937 2.28694 7.8199 3.08547C7.86514 3.92264 7.55972 4.7396 6.9811 5.32915C6.2586 5.92592 5.34237 6.2162 4.41928 6.14077H2.86004ZM4.75948 2.40948C4.4498 2.16434 4.05964 2.05307 3.6717 2.09927H2.85563V4.21516H3.55336C3.96006 4.25583 4.36808 4.15262 4.71025 3.9225C4.92771 3.73671 5.05052 3.45845 5.0435 3.16746C5.05046 2.88593 4.94825 2.61315 4.75948 2.40948Z" class="logo-text"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5681 9.31519C13.8712 8.95745 13.2947 8.39227 12.9132 7.69291V7.69584C12.4639 6.84723 12.2448 5.88951 12.2789 4.92343C12.2018 3.59168 12.6556 2.28519 13.5352 1.30624C14.4822 0.39972 15.7478 -0.0683306 17.0381 0.0107557C18.3377 -0.0774772 19.6166 0.379969 20.5836 1.27892C21.4549 2.24152 21.9046 3.53047 21.8276 4.84442C21.863 5.78675 21.6766 6.72392 21.2841 7.57585C20.9306 8.27636 20.3838 8.85339 19.7126 9.23422C18.9214 9.65483 18.0386 9.85873 17.1489 9.82636C16.2623 9.8582 15.3801 9.68347 14.5681 9.31519ZM17.0298 2.22803C16.5007 2.20821 15.9918 2.43893 15.6486 2.85431C15.2466 3.46532 15.0623 4.20089 15.1269 4.93606C15.064 5.66576 15.2472 6.39551 15.6457 7.00219C15.9974 7.42424 16.518 7.65596 17.0573 7.63042C17.5974 7.66185 18.1214 7.43471 18.4774 7.01487C18.8776 6.35599 19.0544 5.57888 18.9801 4.80534C19.0356 4.10815 18.8476 3.41346 18.4499 2.84651C18.0906 2.43118 17.5693 2.20412 17.0298 2.22803Z" class="logo-text"/>
+                <path d="M27.2021 0.168701V9.66434H34.4919V7.32311H30.0508V0.168701H27.2021Z" class="logo-text"/>
+                <path d="M44.0409 0.168701L42.1806 3.37521L40.3194 0.168701H37.1573L40.7473 5.68717V9.66434H43.6017V5.68717L47.184 0.168701H44.0409Z" class="logo-text"/>
+                <path d="M58.6776 0.168945L57.2377 5.9469L55.7911 0.168945H52.0449V9.66458H54.3776V2.42335L56.1764 9.66458H58.2829L60.0873 2.42335V9.66458H62.4115V0.168945H58.6776Z" class="logo-text"/>
+                <path d="M68.5781 0.168945V9.66458H76.3478V7.51845H71.4325V5.64254H75.8679V3.70615H71.4325V2.19606H76.2096V0.168945H68.5781Z" class="logo-text"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M88.2 9.40476C87.6485 9.56676 87.0788 9.65399 86.5054 9.66425H82.2745V0.167636H86.5054C87.1953 0.141327 87.8831 0.260499 88.5267 0.517845C89.0251 0.738916 89.4626 1.08379 89.8 1.52165C90.142 1.97187 90.3901 2.48993 90.529 3.04345C90.6829 3.64375 90.7593 4.26236 90.7562 4.88326C90.7886 5.68539 90.6739 6.48663 90.4182 7.24498C90.2111 7.77854 89.8924 8.2585 89.4847 8.65069C89.1233 9.00716 88.682 9.26617 88.2 9.40476ZM87.8942 4.94178C87.9678 4.21719 87.7995 3.48838 87.417 2.87564C86.992 2.46289 86.4144 2.25978 85.8332 2.31862H85.1222V7.50737H85.8209C86.2535 7.53707 86.6871 7.46743 87.0904 7.30349C87.3619 7.14396 87.5709 6.89175 87.6812 6.59039C87.8516 6.0594 87.9238 5.5002 87.8942 4.94178Z" class="logo-text"/>
+                <path d="M96.2617 9.66434H99.1161V0.168701H96.2617V9.66434Z" class="logo-text"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M103.988 9.66458L107.452 0.168945H110.558L114.022 9.66458H111.041L110.589 8.09791H107.345L106.898 9.66458H103.988ZM109.992 6.04442L108.973 2.63013L107.961 6.04442H109.992Z" class="logo-text"/>
+              </svg>
+            </a>
+            <div class="header__right">
+              <nav class="header__navigation desktop">
+                <ul class="no-list">
+                  <li>
+                    <a href="#">Компания</a>
+                  </li>
+                  <li>
+                    <a href="#">Проекты</a>
+                  </li>
+                  <li>
+                    <a href="#">Карьера</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <a class="header__phone tablet" href="tel:+78005505029">8 800 550 5029</a>
+              <a class="header__link tablet" href="#">En</a>
+              <nav class="header__personal personal-menu">
+                <ul class="no-list">
+                  <li class="personal-menu__item">
+                    <a href="#" aria-label="Корзина" class="header__basket">
+                      <span>2</span>
+                      <svg>
+                        <use xlink:href="img/sprite.svg#basket"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="personal-menu__item">
+                    <a href="#" aria-label="Пользователь">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#user"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="personal-menu__item">
+                    <a href="#" aria-label="Поиск">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#search-s"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <a class="btn btn--default tablet header__discuss" href="#">Обсудить проект</a>
+              <button type="button" class="header__burger" id="menu-toggle" aria-label="Открыть меню">
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom tablet">
+          <div class="container">
+            <nav class="header__nav">
+              <ul class="no-list">
+                <li>
+                  <a href="#">Аналитические системы</a>
+                </li>
+                <li>
+                  <a href="#">Системная интеграция</a>
+                </li>
+                <li>
+                  <a href="#">Дистрибьюция оборудования</a>
+                </li>
+                <li>
+                  <a href="#">Арендные решения</a>
+                </li>
+                <li>
+                  <a href="#">Сервисный центр</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      <div class="header__drop" id="menu-drop">
+          <div class="header__drop-top">
+            <div class="container">
+              <a href="/" aria-label="На главную" class="header__logo">
+                <svg width="115" height="50" viewBox="0 0 115 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 23.5679H11.141V12.4097H0V23.5679Z" fill="#E4003A"/>
+                  <path d="M0 36.7845H11.141V25.6262H0V36.7845Z" fill="#E4003A"/>
+                  <path d="M0 49.9998H11.141V38.8416H0V49.9998Z" fill="#E4003A"/>
+                  <path d="M12.874 23.5679H24.015V12.4097H12.874V23.5679Z" fill="#008251"/>
+                  <path d="M12.874 36.7845H24.015V25.6262H12.874V36.7845Z" fill="#008251"/>
+                  <path d="M12.874 50.0001H24.015V38.8418H12.874V50.0001Z" fill="#008251"/>
+                  <path d="M25.75 23.5679H36.891V12.4097H25.75V23.5679Z" fill="#154194"/>
+                  <path d="M25.75 36.7845H36.891V25.6262H25.75V36.7845Z" fill="#154194"/>
+                  <path d="M25.75 50.0001H36.891V38.8418H25.75V50.0001Z" fill="#154194"/>
+                  <path d="M38.623 23.5679H49.764V12.4097H38.623V23.5679Z" fill="#E4003A"/>
+                  <path d="M38.623 36.7845H49.764V25.6262H38.623V36.7845Z" fill="#E4003A"/>
+                  <path d="M38.623 49.9998H49.764V38.8416H38.623V49.9998Z" fill="#E4003A"/>
+                  <path d="M51.502 23.5679H62.641V12.4097H51.502V23.5679Z" fill="#008251"/>
+                  <path d="M51.502 36.7845H62.641V25.6262H51.502V36.7845Z" fill="#008251"/>
+                  <path d="M51.502 50.0001H62.641V38.8418H51.502V50.0001Z" fill="#008251"/>
+                  <path d="M64.373 23.5679H75.514V12.4097H64.373V23.5679Z" fill="#154194"/>
+                  <path d="M64.373 36.7845H75.514V25.6262H64.373V36.7845Z" fill="#154194"/>
+                  <path d="M64.373 50.0001H75.514V38.8418H64.373V50.0001Z" fill="#154194"/>
+                  <path d="M77.248 23.5679H88.389V12.4097H77.248V23.5679Z" fill="#E4003A"/>
+                  <path d="M77.248 36.7845H88.389V25.6262H77.248V36.7845Z" fill="#E4003A"/>
+                  <path d="M77.248 50.0001H88.389V38.8418H77.248V50.0001Z" fill="#E4003A"/>
+                  <path d="M90.1191 23.5679H101.26V12.4097H90.1191V23.5679Z" fill="#008251"/>
+                  <path d="M90.1191 36.7845H101.26V25.6262H90.1191V36.7845Z" fill="#008251"/>
+                  <path d="M90.1191 50.0001H101.26V38.8418H90.1191V50.0001Z" fill="#008251"/>
+                  <path d="M102.995 23.5679H114.136V12.4097H102.995V23.5679Z" fill="#154194"/>
+                  <path d="M102.995 36.7845H114.136V25.6262H102.995V36.7845Z" fill="#154194"/>
+                  <path d="M102.995 50.0001H114.136V38.8418H102.995V50.0001Z" fill="#154194"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.86004 6.14077V9.66432H0V0.168688H4.73359C5.57226 0.102511 6.40303 0.375028 7.05022 0.928612C7.58994 1.5039 7.86937 2.28694 7.8199 3.08547C7.86514 3.92264 7.55972 4.7396 6.9811 5.32915C6.2586 5.92592 5.34237 6.2162 4.41928 6.14077H2.86004ZM4.75948 2.40948C4.4498 2.16434 4.05964 2.05307 3.6717 2.09927H2.85563V4.21516H3.55336C3.96006 4.25583 4.36808 4.15262 4.71025 3.9225C4.92771 3.73671 5.05052 3.45845 5.0435 3.16746C5.05046 2.88593 4.94825 2.61315 4.75948 2.40948Z" class="logo-text"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5681 9.31519C13.8712 8.95745 13.2947 8.39227 12.9132 7.69291V7.69584C12.4639 6.84723 12.2448 5.88951 12.2789 4.92343C12.2018 3.59168 12.6556 2.28519 13.5352 1.30624C14.4822 0.39972 15.7478 -0.0683306 17.0381 0.0107557C18.3377 -0.0774772 19.6166 0.379969 20.5836 1.27892C21.4549 2.24152 21.9046 3.53047 21.8276 4.84442C21.863 5.78675 21.6766 6.72392 21.2841 7.57585C20.9306 8.27636 20.3838 8.85339 19.7126 9.23422C18.9214 9.65483 18.0386 9.85873 17.1489 9.82636C16.2623 9.8582 15.3801 9.68347 14.5681 9.31519ZM17.0298 2.22803C16.5007 2.20821 15.9918 2.43893 15.6486 2.85431C15.2466 3.46532 15.0623 4.20089 15.1269 4.93606C15.064 5.66576 15.2472 6.39551 15.6457 7.00219C15.9974 7.42424 16.518 7.65596 17.0573 7.63042C17.5974 7.66185 18.1214 7.43471 18.4774 7.01487C18.8776 6.35599 19.0544 5.57888 18.9801 4.80534C19.0356 4.10815 18.8476 3.41346 18.4499 2.84651C18.0906 2.43118 17.5693 2.20412 17.0298 2.22803Z" class="logo-text"/>
+                  <path d="M27.2021 0.168701V9.66434H34.4919V7.32311H30.0508V0.168701H27.2021Z" class="logo-text"/>
+                  <path d="M44.0409 0.168701L42.1806 3.37521L40.3194 0.168701H37.1573L40.7473 5.68717V9.66434H43.6017V5.68717L47.184 0.168701H44.0409Z" class="logo-text"/>
+                  <path d="M58.6776 0.168945L57.2377 5.9469L55.7911 0.168945H52.0449V9.66458H54.3776V2.42335L56.1764 9.66458H58.2829L60.0873 2.42335V9.66458H62.4115V0.168945H58.6776Z" class="logo-text"/>
+                  <path d="M68.5781 0.168945V9.66458H76.3478V7.51845H71.4325V5.64254H75.8679V3.70615H71.4325V2.19606H76.2096V0.168945H68.5781Z" class="logo-text"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M88.2 9.40476C87.6485 9.56676 87.0788 9.65399 86.5054 9.66425H82.2745V0.167636H86.5054C87.1953 0.141327 87.8831 0.260499 88.5267 0.517845C89.0251 0.738916 89.4626 1.08379 89.8 1.52165C90.142 1.97187 90.3901 2.48993 90.529 3.04345C90.6829 3.64375 90.7593 4.26236 90.7562 4.88326C90.7886 5.68539 90.6739 6.48663 90.4182 7.24498C90.2111 7.77854 89.8924 8.2585 89.4847 8.65069C89.1233 9.00716 88.682 9.26617 88.2 9.40476ZM87.8942 4.94178C87.9678 4.21719 87.7995 3.48838 87.417 2.87564C86.992 2.46289 86.4144 2.25978 85.8332 2.31862H85.1222V7.50737H85.8209C86.2535 7.53707 86.6871 7.46743 87.0904 7.30349C87.3619 7.14396 87.5709 6.89175 87.6812 6.59039C87.8516 6.0594 87.9238 5.5002 87.8942 4.94178Z" class="logo-text"/>
+                  <path d="M96.2617 9.66434H99.1161V0.168701H96.2617V9.66434Z" class="logo-text"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M103.988 9.66458L107.452 0.168945H110.558L114.022 9.66458H111.041L110.589 8.09791H107.345L106.898 9.66458H103.988ZM109.992 6.04442L108.973 2.63013L107.961 6.04442H109.992Z" class="logo-text"/>
+                </svg>
+              </a>
+              <div type="button" class="header__burger">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="container header__drop-bottom">
+            <div class="header__drop-wrap">
+              <nav class="header__drop-nav">
+                <ul class="no-list">
+                  <li>
+                    <a href="#">Компания</a>
+                  </li>
+                  <li>
+                    <a href="#">Проекты</a>
+                  </li>
+                  <li>
+                    <a href="#">Карьера</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+                <ul class="no-list">
+                  <li>
+                    <a href="#">Аналитические системы</a>
+                  </li>
+                  <li>
+                    <a href="#">Системная интеграция</a>
+                  </li>
+                  <li>
+                    <a href="#">Дистрибьюция оборудования</a>
+                  </li>
+                  <li>
+                    <a href="#">Арендные решения</a>
+                  </li>
+                  <li>
+                    <a href="#">Сервисный центр</a>
+                  </li>
+                </ul>
+              </nav>
+              <div>
+                <div class="header__contacts">
+                  <a href="#" class="header__phone">8 800 550 5029</a>
+                  <a href="#">info@polymedia.ru</a>
+                </div>
+                <div class="header__btns">
+                  <a class="btn header__discuss" href="#">Обсудить проект</a>
+                  <a class="header__link" href="#">En</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="breabcrumbs">
+        <ul class="breabcrumbs__list no-list container">
+          <li>
+            <a href="/" class="breabcrumbs__item">Главная</a>
+          </li>
+          <li>
+            <a href="#" class="breabcrumbs__item">Личный кабинет</a>
+          </li>
+          <li>
+            <a href="#" class="breabcrumbs__item">Сравнение товаров</a>
+          </li>
+        </ul>
+      </div>
+      <section class="compare">
+        <div class="container compare__top">
+          <h1>Сравнение товаров</h1>
+          <button class="compare__clear" type="button">
+            <span class="compare__clear-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#trash"></use>
+              </svg>
+            </span>
+            <span>Очистить все сравнение</span>
+          </button>
+        </div>
+        <div class="catalog-nav">
+          <div class="container">
+            <div class="catalog-nav__wrap">
+              <nav class="catalog-nav__menu">
+                <ul class="no-list">
+                  <li>
+                    <a href="#" class="catalog-nav__menu-item icon-fav">
+                      <span class="catalog-nav__menu-icon">
+                        <span class="catalog-nav__number">5</span>
+                        <svg>
+                          <use xlink:href="img/sprite.svg#fav-s"></use>
+                        </svg>
+                      </span>
+                      <span class="catalog-nav__menu-name">Избранное</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="catalog-nav__menu-item icon-compare">
+                      <span class="catalog-nav__menu-icon">
+                        <span class="catalog-nav__number">5</span>
+                        <svg>
+                          <use xlink:href="img/sprite.svg#compare-s"></use>
+                        </svg>
+                      </span>
+                      <span class="catalog-nav__menu-name">Сравнение</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="catalog-nav__menu-item icon-basket">
+                      <span class="catalog-nav__menu-icon">
+                        <span class="catalog-nav__number">2</span>
+                        <svg>
+                          <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                      </span>
+                      <span class="catalog-nav__menu-name">Корзина</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="catalog-nav__menu-item">
+                      <span class="catalog-nav__menu-icon">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#user"></use>
+                        </svg>
+                      </span>
+                      <span class="catalog-nav__menu-name">Кабинет</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <search class="search">
+                <form method="get" action="/" class="search__form">
+                  <input type="search" name="search" value="" placeholder="Введите код тмц или название оборудования"/>
+                  <button type="submit" class="btn">Найти</button>
+                </form>
+              </search>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="compare__wrap">
+            <div class="section-header compare__filter-top">
+              <p class="section-header__text">Все товары <span>5</span></p>
+              <div class="section-header__nav">
+                <button type="button" class="btn-with-icon open-modal" data-id="settings" aria-label="Открыть настройки">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#filter"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="filter-modal compare__categories" id="settings">
+              <div class="container">
+                <div class="filter-modal__top">
+                  <p class="filter-modal__title">Категории товаров</p>
+                  <button type="button" class="filter-modal__close" aria-label="Закрыть окно"></button>
+                </div>
+                <div class="filter-modal__body">
+                  <div class="filter-modal__wrap">
+                    <ul class="no-list compare__categories-list">
+                      <li class="compare__category compare__category--all">
+                        <div class="compare__category-name">Все товары  <span>5</span></div>
+                        <button type="button" class="compare__category-bth" aria-label="Я не знаю, что делает эта кнопка"><span></span></button>
+                      </li>
+                      <li class="compare__category">
+                        <div class="compare__category-name">Интерактивное оборудование  <span>4</span></div>
+                        <button type="button" class="compare__category-bth" aria-label="Я не знаю, что делает эта кнопка"><span></span></button>
+                      </li>
+                      <li class="compare__category">
+                        <div class="compare__category-name">Профессиональные панели  <span>1</span></div>
+                        <button type="button" class="compare__category-bth" aria-label="Я не знаю, что делает эта кнопка"><span></span></button>
+                      </li>
+                    </ul>
+                    <div class="compare__category-bottom">
+                      <div class="switch">
+                        <input type="checkbox" id="show-diff" class="switch__input">
+                        <label for="show-diff" class="switch__label">
+                          <span class="switch__name">Показывать только различия</span>
+                          <span class="switch__block">
+                            <span class="switch__bth"></span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-modal compare__sort" id="change">
+              <div class="container">
+                <div class="filter-modal__top">
+                  <p class="filter-modal__title">Управление списком</p>
+                  <button type="button" class="filter-modal__close" aria-label="Закрыть окно"></button>
+                </div>
+                <div class="filter-modal__body">
+                  <div class="filter-modal__wrap">
+                    <ul class="no-list compare__sort-list">
+                      <li>
+                        <a href="#">Добавить товары</a>
+                      </li>
+                      <li>
+                        <button type="button">Очистить категорию</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container compare__tag">
+              <div class="tags">
+                <a href="" class="tags__item tags__item--active">
+                  Интерактивное оборудование  4 <span class="tags__item-icon">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#arrow-down-left"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="" class="tags__item">
+                  Профессиональные панели  1 <span class="tags__item-icon">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#arrow-down-left"></use>
+                    </svg>
+                  </span>
+                </a>
+                <a href="" class="tags__item">
+                  Все товары  5 <span class="tags__item-icon">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#arrow-down-left"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="compare__main">
+              <div class="compare__aside">
+                <div class="compare__row compare__row--top">
+                  <p class="h4">Характеристики товаров</p>
+                  <form class="compare__form form">
+                    <fieldset class="form__group"> 
+                      <div class="form__check">
+                        <input type="radio" class="form__check-input form__check-input--radio" value="all" name="show" id="all" checked>
+                        <label class="form__check-label" for="all">Все</label>
+                      </div>
+                      <div class="form__check">
+                        <input type="radio" class="form__check-input form__check-input--radio" value="diff" name="show" id="diff">
+                        <label class="form__check-label" for="diff">Только различия</label>
+                      </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn--default">Показать</button>
+                  </form>
+                  <a href="" class="compare__btn">Добавить товары</a>
+                  <button type="button" class="compare__btn">Очистить категорию</button>
+                </div>
+                <div class="compare__row compare__row--border">
+                  Спецпредложения
+                </div>
+                <div class="compare__row compare__row--border">
+                  Бренд
+                </div>
+                <div class="compare__row compare__row--border">
+                  Диагональ экрана, дюйм
+                </div>
+                <div class="compare__row compare__row--border">
+                  Разрешение матрицы экрана, пиксель
+                </div>
+                <div class="compare__row compare__row--border">
+                  Яркость подсветки матрицы, кд/м2
+                </div>
+                <div class="compare__row compare__row--border">
+                  Тип сенсоров касания
+                </div>
+                <div class="compare__row compare__row--border">
+                  Динамическая контрастность экрана
+                </div>
+                <div class="compare__row compare__row--border">
+                  Угол обзора экрана, градус
+                </div>
+                <div class="compare__row compare__row--border">
+                  Диагональ экрана, дюйм
+                </div>
+                <div class="compare__row compare__row--border">
+                  Разрешение матрицы экрана, пиксель
+                </div>
+                <div class="compare__row compare__row--border">
+                  Яркость подсветки матрицы, кд/м2
+                </div>
+                <div class="compare__row compare__row--border">
+                  Тип сенсоров касания
+                </div>
+                <div class="compare__row compare__row--border">
+                  Динамическая контрастность экрана
+                </div>
+                <div class="compare__row compare__row--border">
+                  Угол обзора экрана, градус
+                </div>
+                <div class="compare__row compare__row--border">
+                  Интерфейсы
+                </div>
+              </div>
+              <div class="compare__slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="compare__row">
+                        <div class="catalog-item">
+                          <a href="#" class="catalog-item__img">
+                            <span class="catalog-item__bages">
+                              <span class="catalog-item__bage new">Новинка</span>
+                            </span>
+                            <img src="img/catalog-1-min.png" alt="Устройство информационное сенсорное: интерактивный сенсорный дисплей TeachTouch ВT70-65U v2 (Реестр Минпромторга)">
+                          </a>
+                          <a href="#" class="catalog-item__text">
+                            <span class="catalog-item__name">Устройство информационное сенсорное: интерактивный сенсорный дисплей TeachTouch ВT70-65U v2 (Реестр Минпромторга)</span>
+                            <span class="catalog-item__desc">Реестровый v2, Android 12+Linux, 8/64+8/256 Гб, слот OPS, камера-микрофоны</span>
+                          </a>
+                          <div class="catalog-item__bottom">
+                            <p class="catalog-item__price">136 500 ₽</p>
+                            <p class="catalog-item__note">(розн.&nbsp;цену уточняйте у&nbsp;менеджеров)</p>
+                            <div class="catalog-item__btns">
+                              <button type="button" class="btn catalog-item__basket to-basket"><span>В корзину</span>
+                                <span class="catalog-item__icon-basket">
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                  </svg>
+                                </span>
+                              </button>
+                              <button type="button" class="catalog-item__icon to-favorite" aria-label="Добавить в избранное">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#fav-s"></use>
+                                </svg>
+                              </button>
+                              <button type="button" class="catalog-item__icon catalog-item__icon--active fill to-compare" aria-label="Добавить в сравнение">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#compare-s"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="catalog-item__num">
+                            1 из 5
+                          </div>
+                        </div>
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        <div class="bage bage--red">-20%</div>
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        TeachTouch
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        65
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        3840x2160
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        500
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        Инфракрасный
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        5000:1
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        178/178
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        65
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        3840x2160
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        500
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        Инфракрасный
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        5000:1
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        178/178
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        HDMI2.0 Видеовход х1, USB 3.1 Type C 65W х1, USB 3.0 Type A х2, USB 2.0 Type B (Touch) х1, HDMI 2.0 IN х2, HDMI 2.0 OUT х1, VGA (DE-15F) х1, Mini Jack Audio (TRS 3.5) х1, TRS 3.5 (наушники) х1, TRS 3.5 (микрофон), шт. х1, USB 3.1 Type C х2.0 x1, USB 3.0 Type A х1, USB 2.0 Type
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="compare__row">
+                        <div class="catalog-item">
+                          <a href="#" class="catalog-item__img">
+                            <span class="catalog-item__bages">
+                              <span class="catalog-item__bage new">Новинка</span>
+                            </span>
+                            <img src="img/catalog-1-min.png" alt="Устройство информационное сенсорное: интерактивный сенсорный дисплей TeachTouch ВT70-65U v2 (Реестр Минпромторга)">
+                          </a>
+                          <a href="#" class="catalog-item__text">
+                            <span class="catalog-item__name">Устройство информационное сенсорное: интерактивный сенсорный дисплей TeachTouch ВT70-65U v2 (Реестр Минпромторга)</span>
+                            <span class="catalog-item__desc">Реестровый v2, Android 12+Linux, 8/64+8/256 Гб, слот OPS, камера-микрофоны</span>
+                          </a>
+                          <div class="catalog-item__bottom">
+                            <p class="catalog-item__price">166 000 ₽</p>
+                            <p class="catalog-item__note">(розн.&nbsp;цену уточняйте у&nbsp;менеджеров)</p>
+                            <div class="catalog-item__btns">
+                              <button type="button" class="btn catalog-item__basket to-basket"><span>В корзину</span>
+                                <span class="catalog-item__icon-basket">
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                  </svg>
+                                </span>
+                              </button>
+                              <button type="button" class="catalog-item__icon to-favorite" aria-label="Добавить в избранное">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#fav-s"></use>
+                                </svg>
+                              </button>
+                              <button type="button" class="catalog-item__icon catalog-item__icon--active fill to-compare" aria-label="Добавить в сравнение">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#compare-s"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="catalog-item__num">
+                            2 из 5
+                          </div>
+                        </div>
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        <div class="bage bage--red">-20%</div>
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        TeachTouch
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        65
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        3840x2160
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        500
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        Инфракрасный
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        5000:1
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        178/178
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        65
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        3840x2160
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        500
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        Инфракрасный
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        5000:1
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        178/178
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        HDMI2.0 Видеовход х1, USB 3.1 Type C 65W х1, USB 3.0 Type A х2, USB 2.0 Type B (Touch) х1, HDMI 2.0 IN х2, HDMI 2.0 OUT х1, VGA (DE-15F) х1, Mini Jack Audio (TRS 3.5) х1, TRS 3.5 (наушники) х1, TRS 3.5 (микрофон), шт. х1, USB 3.1 Type C х2.0 x1, USB 3.0 Type A х1, USB 2.0 Type
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="compare__row">
+                        <div class="catalog-item">
+                          <a href="#" class="catalog-item__img">
+                            <span class="catalog-item__bages">
+                              <span class="catalog-item__bage new">Новинка</span>
+                            </span>
+                            <img src="img/catalog-1-min.png" alt="Устройство информационное сенсорное: интерактивный сенсорный дисплей TeachTouch ВT70-65U v2 (Реестр Минпромторга)">
+                          </a>
+                          <a href="#" class="catalog-item__text">
+                            <span class="catalog-item__name">Устройство информационное сенсорное: интерактивный сенсорный дисплей TeachTouch ВT70-65U v2 (Реестр Минпромторга)</span>
+                            <span class="catalog-item__desc">Реестровый v2, Android 12+Linux, 8/64+8/256 Гб, слот OPS, камера-микрофоны</span>
+                          </a>
+                          <div class="catalog-item__bottom">
+                            <p class="catalog-item__price">236 500 ₽</p>
+                            <p class="catalog-item__note">(розн.&nbsp;цену уточняйте у&nbsp;менеджеров)</p>
+                            <div class="catalog-item__btns">
+                              <button type="button" class="btn catalog-item__basket to-basket"><span>В корзину</span>
+                                <span class="catalog-item__icon-basket">
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                  </svg>
+                                </span>
+                              </button>
+                              <button type="button" class="catalog-item__icon to-favorite" aria-label="Добавить в избранное">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#fav-s"></use>
+                                </svg>
+                              </button>
+                              <button type="button" class="catalog-item__icon catalog-item__icon--active fill to-compare" aria-label="Добавить в сравнение">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#compare-s"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="catalog-item__num">
+                            3 из 5
+                          </div>
+                        </div>
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        <div class="bage bage--red">-20%</div>
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        TeachTouch
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        65
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        3840x2160
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        500
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        Инфракрасный
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        5000:1
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        178/178
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        65
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        3840x2160
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        500
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        Инфракрасный
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        5000:1
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        178/178
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        HDMI2.0 Видеовход х1, USB 3.1 Type C 65W х1, USB 3.0 Type A х2, USB 2.0 Type B (Touch) х1, HDMI 2.0 IN х2, HDMI 2.0 OUT х1, VGA (DE-15F) х1, Mini Jack Audio (TRS 3.5) х1, TRS 3.5 (наушники) х1, TRS 3.5 (микрофон), шт. х1, USB 3.1 Type C х2.0 x1, USB 3.0 Type A х1, USB 2.0 Type
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="compare__row">
+                        <div class="catalog-item">
+                          <a href="#" class="catalog-item__img">
+                            <span class="catalog-item__bages">
+                              <span class="catalog-item__bage new">Новинка</span>
+                            </span>
+                            <img src="img/catalog-1-min.png" alt="Устройство информационное сенсорное: интерактивный сенсорный дисплей TeachTouch ВT70-65U v2 (Реестр Минпромторга)">
+                          </a>
+                          <a href="#" class="catalog-item__text">
+                            <span class="catalog-item__name">Устройство информационное сенсорное: интерактивный сенсорный дисплей TeachTouch ВT70-65U v2 (Реестр Минпромторга)</span>
+                            <span class="catalog-item__desc">Реестровый v2, Android 12+Linux, 8/64+8/256 Гб, слот OPS, камера-микрофоны</span>
+                          </a>
+                          <div class="catalog-item__bottom">
+                            <p class="catalog-item__price">236 500 ₽</p>
+                            <p class="catalog-item__note">(розн.&nbsp;цену уточняйте у&nbsp;менеджеров)</p>
+                            <div class="catalog-item__btns">
+                              <button type="button" class="btn catalog-item__basket to-basket"><span>В корзину</span>
+                                <span class="catalog-item__icon-basket"><svg>
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                  </svg>
+                                </span>
+                              </button>
+                              <button type="button" class="catalog-item__icon to-favorite" aria-label="Добавить в избранное">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#fav-s"></use>
+                                </svg>
+                              </button>
+                              <button type="button" class="catalog-item__icon catalog-item__icon--active fill to-compare" aria-label="Добавить в сравнение">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#compare-s"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="catalog-item__num">
+                            4 из 5
+                          </div>
+                        </div>
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        <div class="bage bage--red">-20%</div>
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        TeachTouch
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        65
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        3840x2160
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        500
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        Инфракрасный
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        5000:1
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        178/178
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        65
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        3840x2160
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        500
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        Инфракрасный
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        5000:1
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        178/178
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        HDMI2.0 Видеовход х1, USB 3.1 Type C 65W х1, USB 3.0 Type A х2, USB 2.0 Type B (Touch) х1, HDMI 2.0 IN х2, HDMI 2.0 OUT х1, VGA (DE-15F) х1, Mini Jack Audio (TRS 3.5) х1, TRS 3.5 (наушники) х1, TRS 3.5 (микрофон), шт. х1, USB 3.1 Type C х2.0 x1, USB 3.0 Type A х1, USB 2.0 Type
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="compare__row">
+                        <div class="catalog-item">
+                          <a href="#" class="catalog-item__img">
+                            <span class="catalog-item__bages">
+                              <span class="catalog-item__bage new">Новинка</span>
+                            </span>
+                            <img src="img/catalog-3-min.png" alt="Цифровая лаборатория Polylab по биологии">
+                          </a>
+                          <a href="#" class="catalog-item__text">
+                            <span class="catalog-item__name">Цифровая лаборатория Polylab по биологии</span>
+                          </a>
+                          <div class="catalog-item__bottom">
+                            <div class="catalog-item__btns">
+                              <button type="button" class="btn catalog-item__basket to-basket"><span>В корзину</span>
+                                <span class="catalog-item__icon-basket">
+                                  <svg>
+                                    <use xlink:href="img/sprite.svg#basket"></use>
+                                  </svg>
+                                </span>
+                              </button>
+                              <button type="button" class="catalog-item__icon to-favorite" aria-label="Добавить в избранное">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#fav-s"></use>
+                                </svg>
+                              </button>
+                              <button type="button" class="catalog-item__icon catalog-item__icon--active fill to-compare" aria-label="Добавить в сравнение">
+                                <svg>
+                                  <use xlink:href="img/sprite.svg#compare-s"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="catalog-item__num">
+                            5 из 5
+                          </div>
+                        </div>
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        <div class="bage bage--red">-20%</div>
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        TeachTouch
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        65
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        3840x2160
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        500
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        Инфракрасный
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        5000:1
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        178/178
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        65
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        3840x2160
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        500
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        Инфракрасный
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        5000:1
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        178/178
+                      </div>
+                      <div class="compare__row compare__row--border">
+                        HDMI2.0 Видеовход х1, USB 3.1 Type C 65W х1, USB 3.0 Type A х2, USB 2.0 Type B (Touch) х1, HDMI 2.0 IN х2, HDMI 2.0 OUT х1, VGA (DE-15F) х1, Mini Jack Audio (TRS 3.5) х1, TRS 3.5 (наушники) х1, TRS 3.5 (микрофон), шт. х1, USB 3.1 Type C х2.0 x1, USB 3.0 Type A х1, USB 2.0 Type
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="compare__slider-buttons">
+                  <button type="button" class="compare__slider-button compare__slider-button--prev">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#arrow-next"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="compare__slider-button compare__slider-button--next">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#arrow-next"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="mobile">
+          <div class="footer__mobile">
+            <a href="/" aria-label="На главную" class="footer__logo">
+              <svg width="115" height="50" viewBox="0 0 115 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 23.5679H11.141V12.4097H0V23.5679Z" fill="#E4003A"/>
+                <path d="M0 36.7845H11.141V25.6262H0V36.7845Z" fill="#E4003A"/>
+                <path d="M0 49.9998H11.141V38.8416H0V49.9998Z" fill="#E4003A"/>
+                <path d="M12.874 23.5679H24.015V12.4097H12.874V23.5679Z" fill="#008251"/>
+                <path d="M12.874 36.7845H24.015V25.6262H12.874V36.7845Z" fill="#008251"/>
+                <path d="M12.874 50.0001H24.015V38.8418H12.874V50.0001Z" fill="#008251"/>
+                <path d="M25.75 23.5679H36.891V12.4097H25.75V23.5679Z" fill="#154194"/>
+                <path d="M25.75 36.7845H36.891V25.6262H25.75V36.7845Z" fill="#154194"/>
+                <path d="M25.75 50.0001H36.891V38.8418H25.75V50.0001Z" fill="#154194"/>
+                <path d="M38.623 23.5679H49.764V12.4097H38.623V23.5679Z" fill="#E4003A"/>
+                <path d="M38.623 36.7845H49.764V25.6262H38.623V36.7845Z" fill="#E4003A"/>
+                <path d="M38.623 49.9998H49.764V38.8416H38.623V49.9998Z" fill="#E4003A"/>
+                <path d="M51.502 23.5679H62.641V12.4097H51.502V23.5679Z" fill="#008251"/>
+                <path d="M51.502 36.7845H62.641V25.6262H51.502V36.7845Z" fill="#008251"/>
+                <path d="M51.502 50.0001H62.641V38.8418H51.502V50.0001Z" fill="#008251"/>
+                <path d="M64.373 23.5679H75.514V12.4097H64.373V23.5679Z" fill="#154194"/>
+                <path d="M64.373 36.7845H75.514V25.6262H64.373V36.7845Z" fill="#154194"/>
+                <path d="M64.373 50.0001H75.514V38.8418H64.373V50.0001Z" fill="#154194"/>
+                <path d="M77.248 23.5679H88.389V12.4097H77.248V23.5679Z" fill="#E4003A"/>
+                <path d="M77.248 36.7845H88.389V25.6262H77.248V36.7845Z" fill="#E4003A"/>
+                <path d="M77.248 50.0001H88.389V38.8418H77.248V50.0001Z" fill="#E4003A"/>
+                <path d="M90.1191 23.5679H101.26V12.4097H90.1191V23.5679Z" fill="#008251"/>
+                <path d="M90.1191 36.7845H101.26V25.6262H90.1191V36.7845Z" fill="#008251"/>
+                <path d="M90.1191 50.0001H101.26V38.8418H90.1191V50.0001Z" fill="#008251"/>
+                <path d="M102.995 23.5679H114.136V12.4097H102.995V23.5679Z" fill="#154194"/>
+                <path d="M102.995 36.7845H114.136V25.6262H102.995V36.7845Z" fill="#154194"/>
+                <path d="M102.995 50.0001H114.136V38.8418H102.995V50.0001Z" fill="#154194"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.86004 6.14077V9.66432H0V0.168688H4.73359C5.57226 0.102511 6.40303 0.375028 7.05022 0.928612C7.58994 1.5039 7.86937 2.28694 7.8199 3.08547C7.86514 3.92264 7.55972 4.7396 6.9811 5.32915C6.2586 5.92592 5.34237 6.2162 4.41928 6.14077H2.86004ZM4.75948 2.40948C4.4498 2.16434 4.05964 2.05307 3.6717 2.09927H2.85563V4.21516H3.55336C3.96006 4.25583 4.36808 4.15262 4.71025 3.9225C4.92771 3.73671 5.05052 3.45845 5.0435 3.16746C5.05046 2.88593 4.94825 2.61315 4.75948 2.40948Z" class="logo-text"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5681 9.31519C13.8712 8.95745 13.2947 8.39227 12.9132 7.69291V7.69584C12.4639 6.84723 12.2448 5.88951 12.2789 4.92343C12.2018 3.59168 12.6556 2.28519 13.5352 1.30624C14.4822 0.39972 15.7478 -0.0683306 17.0381 0.0107557C18.3377 -0.0774772 19.6166 0.379969 20.5836 1.27892C21.4549 2.24152 21.9046 3.53047 21.8276 4.84442C21.863 5.78675 21.6766 6.72392 21.2841 7.57585C20.9306 8.27636 20.3838 8.85339 19.7126 9.23422C18.9214 9.65483 18.0386 9.85873 17.1489 9.82636C16.2623 9.8582 15.3801 9.68347 14.5681 9.31519ZM17.0298 2.22803C16.5007 2.20821 15.9918 2.43893 15.6486 2.85431C15.2466 3.46532 15.0623 4.20089 15.1269 4.93606C15.064 5.66576 15.2472 6.39551 15.6457 7.00219C15.9974 7.42424 16.518 7.65596 17.0573 7.63042C17.5974 7.66185 18.1214 7.43471 18.4774 7.01487C18.8776 6.35599 19.0544 5.57888 18.9801 4.80534C19.0356 4.10815 18.8476 3.41346 18.4499 2.84651C18.0906 2.43118 17.5693 2.20412 17.0298 2.22803Z" class="logo-text"/>
+                <path d="M27.2021 0.168701V9.66434H34.4919V7.32311H30.0508V0.168701H27.2021Z" class="logo-text"/>
+                <path d="M44.0409 0.168701L42.1806 3.37521L40.3194 0.168701H37.1573L40.7473 5.68717V9.66434H43.6017V5.68717L47.184 0.168701H44.0409Z" class="logo-text"/>
+                <path d="M58.6776 0.168945L57.2377 5.9469L55.7911 0.168945H52.0449V9.66458H54.3776V2.42335L56.1764 9.66458H58.2829L60.0873 2.42335V9.66458H62.4115V0.168945H58.6776Z" class="logo-text"/>
+                <path d="M68.5781 0.168945V9.66458H76.3478V7.51845H71.4325V5.64254H75.8679V3.70615H71.4325V2.19606H76.2096V0.168945H68.5781Z" class="logo-text"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M88.2 9.40476C87.6485 9.56676 87.0788 9.65399 86.5054 9.66425H82.2745V0.167636H86.5054C87.1953 0.141327 87.8831 0.260499 88.5267 0.517845C89.0251 0.738916 89.4626 1.08379 89.8 1.52165C90.142 1.97187 90.3901 2.48993 90.529 3.04345C90.6829 3.64375 90.7593 4.26236 90.7562 4.88326C90.7886 5.68539 90.6739 6.48663 90.4182 7.24498C90.2111 7.77854 89.8924 8.2585 89.4847 8.65069C89.1233 9.00716 88.682 9.26617 88.2 9.40476ZM87.8942 4.94178C87.9678 4.21719 87.7995 3.48838 87.417 2.87564C86.992 2.46289 86.4144 2.25978 85.8332 2.31862H85.1222V7.50737H85.8209C86.2535 7.53707 86.6871 7.46743 87.0904 7.30349C87.3619 7.14396 87.5709 6.89175 87.6812 6.59039C87.8516 6.0594 87.9238 5.5002 87.8942 4.94178Z" class="logo-text"/>
+                <path d="M96.2617 9.66434H99.1161V0.168701H96.2617V9.66434Z" class="logo-text"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M103.988 9.66458L107.452 0.168945H110.558L114.022 9.66458H111.041L110.589 8.09791H107.345L106.898 9.66458H103.988ZM109.992 6.04442L108.973 2.63013L107.961 6.04442H109.992Z" class="logo-text"/>
+              </svg>
+            </a>
+            <ul class="no-list footer__social">
+              <li>
+                <a href="#" aria-label="VK">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Telegram">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="YouTube">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="ED">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#ed"></use>
+                  </svg>    
+                </a>
+              </li>
+            </ul>
+            <div class="footer__contact">
+              <a href="#" class="footer__phone">8 800 550 5029</a>
+              <p>Звонок бесплатный</p>
+            </div>
+            <div class="footer__contact">
+              <a href="#" class="footer__email">info@polymedia.ru</a>
+              <p>Общие вопросы</p>
+            </div>
+            <a href="#" class="btn btn--big btn--default footer__btn">Обсудить проект</a>
+            <nav class="footer__nav">
+              <ul class="no-list">
+                <li>
+                  <a href="#">О Polymedia</a>
+                </li>
+                <li>
+                  <a href="#">Карьера</a>
+                </li>
+                <li>
+                  <a href="#">Проекты</a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Клиенты</a>
+                </li>
+                <li>
+                  <a href="#">СМИ о компании</a>
+                </li>
+                <li>
+                  <a href="#">Партнеры</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="tablet footer__desk">
+          <div class="footer__top">
+            <div class="footer__col">
+              <a href="/" aria-label="На главную" class="footer__logo">
+                <svg width="115" height="50" viewBox="0 0 115 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 23.5679H11.141V12.4097H0V23.5679Z" fill="#E4003A"/>
+                  <path d="M0 36.7845H11.141V25.6262H0V36.7845Z" fill="#E4003A"/>
+                  <path d="M0 49.9998H11.141V38.8416H0V49.9998Z" fill="#E4003A"/>
+                  <path d="M12.874 23.5679H24.015V12.4097H12.874V23.5679Z" fill="#008251"/>
+                  <path d="M12.874 36.7845H24.015V25.6262H12.874V36.7845Z" fill="#008251"/>
+                  <path d="M12.874 50.0001H24.015V38.8418H12.874V50.0001Z" fill="#008251"/>
+                  <path d="M25.75 23.5679H36.891V12.4097H25.75V23.5679Z" fill="#154194"/>
+                  <path d="M25.75 36.7845H36.891V25.6262H25.75V36.7845Z" fill="#154194"/>
+                  <path d="M25.75 50.0001H36.891V38.8418H25.75V50.0001Z" fill="#154194"/>
+                  <path d="M38.623 23.5679H49.764V12.4097H38.623V23.5679Z" fill="#E4003A"/>
+                  <path d="M38.623 36.7845H49.764V25.6262H38.623V36.7845Z" fill="#E4003A"/>
+                  <path d="M38.623 49.9998H49.764V38.8416H38.623V49.9998Z" fill="#E4003A"/>
+                  <path d="M51.502 23.5679H62.641V12.4097H51.502V23.5679Z" fill="#008251"/>
+                  <path d="M51.502 36.7845H62.641V25.6262H51.502V36.7845Z" fill="#008251"/>
+                  <path d="M51.502 50.0001H62.641V38.8418H51.502V50.0001Z" fill="#008251"/>
+                  <path d="M64.373 23.5679H75.514V12.4097H64.373V23.5679Z" fill="#154194"/>
+                  <path d="M64.373 36.7845H75.514V25.6262H64.373V36.7845Z" fill="#154194"/>
+                  <path d="M64.373 50.0001H75.514V38.8418H64.373V50.0001Z" fill="#154194"/>
+                  <path d="M77.248 23.5679H88.389V12.4097H77.248V23.5679Z" fill="#E4003A"/>
+                  <path d="M77.248 36.7845H88.389V25.6262H77.248V36.7845Z" fill="#E4003A"/>
+                  <path d="M77.248 50.0001H88.389V38.8418H77.248V50.0001Z" fill="#E4003A"/>
+                  <path d="M90.1191 23.5679H101.26V12.4097H90.1191V23.5679Z" fill="#008251"/>
+                  <path d="M90.1191 36.7845H101.26V25.6262H90.1191V36.7845Z" fill="#008251"/>
+                  <path d="M90.1191 50.0001H101.26V38.8418H90.1191V50.0001Z" fill="#008251"/>
+                  <path d="M102.995 23.5679H114.136V12.4097H102.995V23.5679Z" fill="#154194"/>
+                  <path d="M102.995 36.7845H114.136V25.6262H102.995V36.7845Z" fill="#154194"/>
+                  <path d="M102.995 50.0001H114.136V38.8418H102.995V50.0001Z" fill="#154194"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.86004 6.14077V9.66432H0V0.168688H4.73359C5.57226 0.102511 6.40303 0.375028 7.05022 0.928612C7.58994 1.5039 7.86937 2.28694 7.8199 3.08547C7.86514 3.92264 7.55972 4.7396 6.9811 5.32915C6.2586 5.92592 5.34237 6.2162 4.41928 6.14077H2.86004ZM4.75948 2.40948C4.4498 2.16434 4.05964 2.05307 3.6717 2.09927H2.85563V4.21516H3.55336C3.96006 4.25583 4.36808 4.15262 4.71025 3.9225C4.92771 3.73671 5.05052 3.45845 5.0435 3.16746C5.05046 2.88593 4.94825 2.61315 4.75948 2.40948Z" class="logo-text"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5681 9.31519C13.8712 8.95745 13.2947 8.39227 12.9132 7.69291V7.69584C12.4639 6.84723 12.2448 5.88951 12.2789 4.92343C12.2018 3.59168 12.6556 2.28519 13.5352 1.30624C14.4822 0.39972 15.7478 -0.0683306 17.0381 0.0107557C18.3377 -0.0774772 19.6166 0.379969 20.5836 1.27892C21.4549 2.24152 21.9046 3.53047 21.8276 4.84442C21.863 5.78675 21.6766 6.72392 21.2841 7.57585C20.9306 8.27636 20.3838 8.85339 19.7126 9.23422C18.9214 9.65483 18.0386 9.85873 17.1489 9.82636C16.2623 9.8582 15.3801 9.68347 14.5681 9.31519ZM17.0298 2.22803C16.5007 2.20821 15.9918 2.43893 15.6486 2.85431C15.2466 3.46532 15.0623 4.20089 15.1269 4.93606C15.064 5.66576 15.2472 6.39551 15.6457 7.00219C15.9974 7.42424 16.518 7.65596 17.0573 7.63042C17.5974 7.66185 18.1214 7.43471 18.4774 7.01487C18.8776 6.35599 19.0544 5.57888 18.9801 4.80534C19.0356 4.10815 18.8476 3.41346 18.4499 2.84651C18.0906 2.43118 17.5693 2.20412 17.0298 2.22803Z" class="logo-text"/>
+                  <path d="M27.2021 0.168701V9.66434H34.4919V7.32311H30.0508V0.168701H27.2021Z" class="logo-text"/>
+                  <path d="M44.0409 0.168701L42.1806 3.37521L40.3194 0.168701H37.1573L40.7473 5.68717V9.66434H43.6017V5.68717L47.184 0.168701H44.0409Z" class="logo-text"/>
+                  <path d="M58.6776 0.168945L57.2377 5.9469L55.7911 0.168945H52.0449V9.66458H54.3776V2.42335L56.1764 9.66458H58.2829L60.0873 2.42335V9.66458H62.4115V0.168945H58.6776Z" class="logo-text"/>
+                  <path d="M68.5781 0.168945V9.66458H76.3478V7.51845H71.4325V5.64254H75.8679V3.70615H71.4325V2.19606H76.2096V0.168945H68.5781Z" class="logo-text"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M88.2 9.40476C87.6485 9.56676 87.0788 9.65399 86.5054 9.66425H82.2745V0.167636H86.5054C87.1953 0.141327 87.8831 0.260499 88.5267 0.517845C89.0251 0.738916 89.4626 1.08379 89.8 1.52165C90.142 1.97187 90.3901 2.48993 90.529 3.04345C90.6829 3.64375 90.7593 4.26236 90.7562 4.88326C90.7886 5.68539 90.6739 6.48663 90.4182 7.24498C90.2111 7.77854 89.8924 8.2585 89.4847 8.65069C89.1233 9.00716 88.682 9.26617 88.2 9.40476ZM87.8942 4.94178C87.9678 4.21719 87.7995 3.48838 87.417 2.87564C86.992 2.46289 86.4144 2.25978 85.8332 2.31862H85.1222V7.50737H85.8209C86.2535 7.53707 86.6871 7.46743 87.0904 7.30349C87.3619 7.14396 87.5709 6.89175 87.6812 6.59039C87.8516 6.0594 87.9238 5.5002 87.8942 4.94178Z" class="logo-text"/>
+                  <path d="M96.2617 9.66434H99.1161V0.168701H96.2617V9.66434Z" class="logo-text"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M103.988 9.66458L107.452 0.168945H110.558L114.022 9.66458H111.041L110.589 8.09791H107.345L106.898 9.66458H103.988ZM109.992 6.04442L108.973 2.63013L107.961 6.04442H109.992Z" class="logo-text"/>
+                </svg>
+              </a>
+            </div>
+            <div class="footer__col footer__contact">
+              <a href="#" class="footer__phone">8 800 550 5029</a>
+              <p>Звонок бесплатный</p>
+            </div>
+            <div class="footer__col">
+              <p class="footer__address">117218, г.&nbsp;Москва, <br>ул.&nbsp;Кржижановского, д.&nbsp;29, корпус&nbsp;1</p>
+            </div>
+            <div class="footer__col">
+              <a href="#" class="btn btn--big btn--default footer__btn">Обсудить проект</a>
+            </div>
+          </div>
+          <nav class="footer__middle">
+            <ul class="no-list footer__col footer__nav">
+              <li>
+                <span class="footer__title">О компании</span>
+              </li>
+              <li>
+                <a href="#">О Polymedia</a>
+              </li>
+              <li>
+                <a href="#">Проекты</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Партнеры</a>
+              </li>
+              <li>
+                <a href="#">Карьера</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="no-list footer__col footer__nav">
+              <li>
+                <span class="footer__title">Направления</span>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#">Аналитические системы</a>
+              </li>
+              <li>
+                <a href="#">Системная интеграция</a>
+              </li>
+              <li>
+                <a href="#">Дистрибьюция</a>
+              </li>
+              <li>
+                <a href="#">Арендные решения</a>
+              </li>
+              <li>
+                <a href="#">Сервисный центр</a>
+              </li>
+            </ul>
+            <ul class="no-list footer__col footer__nav">
+              <li>
+                <span class="footer__title">Медиацентр</span>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">СМИ о компании</a>
+              </li>
+              <li>
+                <a href="#">Для прессы</a>
+              </li>
+            </ul>
+            <div class="footer__col">
+              <ul class="no-list footer__contacts">
+                <li>
+                  <a href="#">info@polymedia.ru</a>
+                  <p>Общие вопросы</p>
+                </li>
+                <li>
+                  <a href="#">sales@polymedia.ru</a>
+                  <p>Департамент продаж</p>
+                </li>
+                <li>
+                  <a href="#">hr@polymedia.ru</a>
+                  <p>HR-служба</p>
+                </li>
+              </ul>
+              <ul class="no-list footer__social">
+                <li>
+                  <a href="#" aria-label="VK">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Telegram">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="YouTube">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="ED">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#ed"></use>
+                    </svg>    
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p>© 2024 Polymedia. <br>Все права защищены</p>
+          <a href="#">Соглашение на обработку персональных данных</a>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Карта сайта</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/swiper-bundle.js"></script>
+  <script src="js/main.js"></script>
+</body>

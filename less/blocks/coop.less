@@ -1,0 +1,342 @@
+.coop {
+  h2 {
+    margin-bottom: 21px;
+  }
+  &--catalog {
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .coop__text {
+      margin-top: 11px;
+    }
+  }
+  &--integration {
+    h2 {
+      margin-bottom: 10px;
+    }
+    .coop__text {
+      margin-bottom: 20px;
+      margin-top: 11px;
+    }
+    .coop__form {
+      margin-top: 15px;
+    }
+    .form__item {
+      margin-bottom: 11px;
+    }
+    .form__btn.btn {
+      margin-top: 20px;
+    }
+  }
+  &--contacts {
+    h2 {
+      margin-bottom: 11px;
+    }
+    .coop__text {
+      margin: 0;
+    }
+    .coop__form {
+      margin-top: 21px;
+    }
+  }
+}
+.coop__wrap {
+  background-color: var(--color-light);
+  margin: 0 auto;
+  max-width: 1760px;
+  padding: 80px 0;
+  width: 100%;
+}
+.coop__text {
+  font-weight: var(--f-lighter);
+  line-height: 1.3;
+  margin: 20px 0 40px;
+}
+.coop__numbers {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 9px;
+  margin: 0;
+  li {
+    border-left: 1px solid var(--color-light-secondary);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 0;
+    padding: 0 0 10px 9px;
+  }
+  .number {
+    margin: 7px 0 0px;
+  }
+}
+.coop__right {
+  margin: 60px 0 0;
+}
+.coop__number-note {
+  font-size: 12px;
+  margin: 7px 0 0;
+}
+.coop__form {
+  margin: 80px 0 0;
+}
+@media (min-width: @tablet-breakpoint) {
+  .coop {
+    h2 {
+      margin-bottom: 20px;
+    }
+    &--catalog {
+      h2 {
+        font-size: 40px;
+        margin-bottom: 19px;
+      }
+      .coop__text {
+        margin-bottom: 52px;
+        margin-top: 0;
+      }
+    }
+    &--integration {
+      .coop__form {
+        margin-top: 25px;
+      }
+      .form__flex {
+        flex-wrap: wrap;
+        .form__item {
+          flex-grow: 0;
+          margin: 0 0 15px;
+          &--wide {
+            flex-grow: 1;
+            margin-right: 2%;
+          }
+        }
+      }
+      .form__item {
+        width: 32%;
+      }
+      .form__btn.btn {
+        margin-top: 0;
+      }
+      .form__note {
+        margin-top: 0;
+      }
+    }
+    &--contacts {
+      .form__flex {
+        flex-wrap: wrap;
+        .form__item {
+          flex-grow: 0;
+          margin: 0 0 15px;
+          &--wide {
+            flex-grow: 1;
+            margin-right: 2%;
+          }
+        }
+      }
+    }
+  }
+  .coop__container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .coop__wrap {
+    overflow: hidden;
+    padding: 97px 0 100px;
+  }
+  .coop__left {
+    width: 48%;
+  }
+  .coop__right {
+    margin: 0;
+    width: 51%;
+  }
+  .coop__text {
+    line-height: 1.5;
+    margin: 0 0 51px;
+  }
+  .coop__numbers {
+    gap: 0;
+    height: 100%;
+    li {
+      padding: 0 0 0 15px;
+    }
+    .number {
+      margin: 0.3em 0 0;
+    }
+  }
+  .coop__number-note {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .coop__form {
+    margin-top: 99px;
+  }
+}
+@media (min-width: @desktop-breakpoint) {
+  .coop {
+    margin: 100px 0 120px;
+    h2 {
+      margin-bottom: 26px;
+    }
+    &--catalog {
+      h2 {
+        font-size: 46px;
+        margin-bottom: 25px;
+      }
+      .coop__wrap {
+        padding: 57px 0 60px;
+      }
+      .coop__right {
+        width: 50.8%;
+      }
+      .coop__left {
+        width: 45%;
+        .btn {
+          .arrow {
+            margin-left: 21px;
+          }
+        }
+      }
+      .coop__text {
+        margin-bottom: 74px;
+      }
+    }
+    &--integration {
+      .coop__form {
+        margin-top: 29px;
+      }
+    }
+  }
+  .coop__wrap {
+    max-width: 1320px;
+    overflow: hidden;
+    padding: 56px 0 61px;
+    width: 97%;
+  }
+  .coop__left {
+    width: 40%;
+  }
+  .coop__text {
+    margin-bottom: 45px;
+  }
+  .coop__numbers {
+    li {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      flex-direction: column;
+      margin-right: 34px;
+      padding: 18px 0 9px 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .number {
+      margin: 0 0 11px;
+    }
+  }
+  .coop__number-note {
+    font-size: 20px;
+  }
+  .coop__right {
+    width: 50.4%;
+  }
+  .coop__form {
+    margin-top: 60px;
+  }
+}
+@media (min-width: @wide-breakpoint) {
+  .coop {
+    margin: 155px 0 162px;
+    h2 {
+      margin-bottom: 36px;
+    }
+    &--catalog {
+      h2 {
+        font-size: 52px;
+        margin-bottom: 38px;
+      }
+      .coop__wrap {
+        padding: 75px 0 81px;
+      }
+      .coop__text {
+        margin-bottom: 59px;
+      }
+      .coop__right {
+        width: 51%;
+      }
+      .coop__numbers {
+        li {
+          padding-left: 30px;
+        }
+      }
+    }
+    &--integration {
+      .coop__form {
+        margin-top: 43px;
+      }
+      .form__flex {
+        .form__item {
+          margin-bottom: 30px;
+        }
+      }
+      .form__note {
+        margin-top: -7px;
+      }
+      .coop__wrap {
+        padding-bottom: 80px;
+        padding-top: 75px;
+      }
+    }
+    &--contacts {
+      h2 {
+        margin-bottom: 34px;
+      }
+      .coop__form {
+        margin-top: 41px;
+      }
+      .form__flex {
+        .form__item {
+          width: calc(33.33% - 21px);
+          margin-bottom: 30px;
+        }
+      }
+      .form__note {
+        margin-top: -8px;
+      }
+      .coop__wrap {
+        padding-bottom: 81px;
+      }
+    }
+  }
+  .coop__wrap {
+    max-width: 1760px;
+    width: 97%;
+    padding: 73px 0 90px;
+  }
+  .coop__left {
+    .btn {
+      padding: 9px 11px 9px 9px;
+    }
+  }
+  .coop__text {
+    margin-bottom: 58px;
+  }
+  .coop__right {
+    width: 50.9%;
+  }
+  .coop__numbers {
+    li {
+      margin-right: 0;
+      padding: 18px 0 15px 28px;
+    }
+    .number {
+      margin: 0 0 13px;
+    }
+  }
+  .coop__form {
+    margin-top: 79px;
+  }
+}

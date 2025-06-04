@@ -1,0 +1,59 @@
+.letters-list.dark-bg {
+  padding: 83px 0 80px;
+}
+.letters-list {
+  ul {
+    margin: 0;
+  }
+}
+.letters-list__item {
+  font-size: 12px;
+  font-weight: var(--f-lighter);
+  line-height: 1.2;
+  margin: 0;
+  &:not(:first-child) {
+    display: none;
+  }
+  p {
+    margin: 0;
+  }
+}
+.letters-list__img {
+  margin: 0 0 11px;
+  width: 100%;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.letters-list__more.btn {
+  margin: 54px auto 0;
+}
+@media (min-width: @tablet-breakpoint) {
+  .letters-list.dark-bg {
+    padding: 77px 0 80px;
+  }
+  .letters-list {
+    ul {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+  .letters-list__item {
+    font-size: 15px;
+    line-height: 1.35;
+    width: 23.6%;
+    &:not(:first-child) {
+      display: block;
+    }
+  }
+  .letters-list__img {
+    margin-bottom: 22px;
+  }
+}
+@media (min-width: @desktop-breakpoint) {
+  .letters-list__more.btn {
+    margin: 0;
+  }
+}
